@@ -59,7 +59,7 @@ export default function DraggableGrid() {
         onDragStart={onDragStart}
         onTouchStart={onTouchStart}
       >
-        <Image src="/mycomputer.png" width={64} height={64} alt="My Computer" />
+        <Image src="/myComputer.png" width={64} height={64} alt="My Computer" />
       </button>
 
       <button
