@@ -62,7 +62,7 @@ export const useContext = (
       console.log(" target:", target);
       if (target.closest("button")) {
         //Delay modal close slightly to allow button click to register
-        setTimeout(() => setOpen(false), 100);
+        setTimeout(() => setOpen(false), 200);
         return;
       }
 
