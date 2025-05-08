@@ -1,15 +1,38 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const tahoma = localFont({
+  src: [
+    {
+      path: "../fonts/TahomaA.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/TahomaA.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-tahoma",
+  display: "swap",
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const franklinGothic = localFont({
+  src: [
+    {
+      path: "../fonts/FranklinGothicITALIC.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/FranklinGothicITALIC.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-franklinGothic",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${tahoma.className} ${franklinGothic.className} antialiased`}
       >
         {children}
       </body>
