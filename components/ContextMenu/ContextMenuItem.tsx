@@ -12,7 +12,9 @@ export default function ContextMenuItem({ item }: ContextMenuItemProps) {
       } py-0.5 px-[1.25rem_.5rem] hover:bg-blue-400`}
     >
       {action ? (
-        <button className="w-full text-left" onClick={() => action()}>{label}</button>
+        <button className="w-full text-left" onClick={() => action()}>
+          {label}
+        </button>
       ) : (
         <p>{label}</p>
       )}

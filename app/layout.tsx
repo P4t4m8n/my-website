@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${tahoma.className} ${franklinGothic.className} antialiased`}
+        className={` ${tahoma.className} ${franklinGothic.className} antialiased w-screen  h-screen`}
       >
         {children}
       </body>

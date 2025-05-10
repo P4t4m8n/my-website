@@ -8,6 +8,11 @@
   --color-main-green: rgb(125, 188, 57);
   --color-main-gray: rgb(240, 240, 240);
   --color-main-gray-light: rgb(192, 192, 192);
+  --color-start-menu: rgb(66, 130, 214);
+  --color-start-menu-right: rgb(210, 229, 250);
+  --color-start-menu-border: rgb(166, 187, 214);
+
+  --shadow-menu: rgb(0 0 0 / 50%) 2px 4px 2px;
 
   --font-tahoma: var(--font-tahoma), sans-serif;
   --font-franklinGothic: var(--font-franklinGothic);
@@ -31,4 +36,28 @@ body {
 
 li {
   list-style: none;
+}
+
+.menu-grid {
+  grid-template-rows: 5rem calc(100% - 9rem) 4rem;
+}
+
+.menu-header {
+  background: linear-gradient(
+    rgb(66, 130, 214) 0%,
+    rgb(59, 133, 224) 3%,
+    rgb(65, 138, 227) 5%,
+    rgb(65, 138, 227) 17%,
+    rgb(60, 135, 226) 21%,
+    rgb(55, 134, 228) 26%,
+    rgb(52, 130, 227) 29%,
+    rgb(46, 126, 225) 39%,
+    rgb(35, 116, 223) 49%,
+    rgb(32, 114, 219) 57%,
+    rgb(25, 110, 219) 62%,
+    rgb(23, 107, 216) 72%,
+    rgb(20, 104, 213) 75%,
+    rgb(17, 101, 210) 83%,
+    rgb(15, 97, 203) 88%
+  );
 }
